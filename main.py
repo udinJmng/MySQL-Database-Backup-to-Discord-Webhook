@@ -2,7 +2,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 from datetime import datetime
 import os
 
-webhook = DiscordWebhook(url='YOUR_WEBHOOK', username="Database BOT")
+webhook = DiscordWebhook(url='https://discord.com/api/webhooks/960907714547048458/mLkQJgoSSogT4zMo3hvqZ9yEKU95JrRnGO8GzNK5JMXbKzIQXV7zlGlN9Cp5z0_lRQZ2', username="AGUNG GANTENG")
 
 
 # get datatime
@@ -18,7 +18,7 @@ webhook.add_embed(embed)
 
 # attach file
 var = os.popen(
-    "mysqldump --databases --user=YOUR_DATABASE_USERNAME --password=YOUR_DATABASE_PASSWORD YOUR_DATABASE_NAME").read()
+    "mysqldump --databases --user=root --password= memekujang").read()
 webhook.add_file(file=var, filename='database.sql')
 
 # execute
