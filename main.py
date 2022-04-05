@@ -18,8 +18,8 @@ webhook.add_embed(embed)
 
 # attach file
 var = os.popen(
-    "mysqldump --databases --user=root --password= memekujang").read()
-webhook.add_file(file=var, filename='database.sql')
+    "mysqldump --databases --user=root --password=").read()
+webhook.add_file(file=var, filename='memekujang.sql')
 
 # execute
 response = webhook.execute()
